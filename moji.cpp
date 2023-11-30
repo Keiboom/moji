@@ -5,9 +5,9 @@ int main() {
 	FILE* fp = fopen("data.txt", "r");
 	for (int i = 0; i < 64; i++) {
 		(void)fscanf(fp, "%c", &moji[i]);
-		if (moji[i] == '1') { printf("–"); continue; }
-		else if (moji[i] == '0') { printf("@"); continue;}
-		else if (moji[i] == '\n'){ printf("\n"); continue;}
+		if (moji[i] == '1') { printf("–"); continue;}
+		if (moji[i] == '0') { printf("@"); continue;}
+		if (moji[i] == '\n'){ printf("\n"); continue;}
 	}
 	fclose(fp);
 	return 0;
